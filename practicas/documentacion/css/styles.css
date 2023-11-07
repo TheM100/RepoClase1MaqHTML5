@@ -1,28 +1,10 @@
-/* el selector universal afecta todas las etiquetas
-  aqui se le esta quitando el espaciado por defecto
-  que tienen las etiquetas
-  margin: es el espacio externo de las etiquetas, permite separar una etiqueta de otra
-  padding: es el espacio interno de las etiquetas
- */
+
 * {
   margin: 0;
   padding: 0;
 }
 
-/*  
-  .enlaces es la clase que tiene el contenedor gris de los enlaces
-  background-color: define el color gris de fondo, se estan usando
-  colores en hexadecimal
-  padding: espacio interno de la etiqueta, da un espacio dentro del area gris
-  border-radius: redondea los bordes, en el area gris, las esquinas esta redondeaddas
-  width: Define el anchode la seccion
-  margin-top: espacio exterior del area gris hacia arriba;
-  margin-bottom: espacio exterior del area gris hacia abajo;
-  margin-left: espacio exterior del area gris hacia la izquierda;
-  margin-right: espacio exterior del area gris hacia derecha;
-  nota: usar margin con valor en 'auto' centra los elementos que tengan un width definido
-  
-*/
+
 .enlaces {
   background-color: #d1d1d1;
   padding: 8px;
@@ -32,47 +14,67 @@
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
 
-/* list-style: none, quita el puntito de la izquiera de los elementos de las listas */
-.enlaceListaItem {
+
+.enlaces li {
   list-style: none;
   padding: 4px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ponemos un color negro para los enlaces */
-.link {
-  color: #272727;
+.enlaces a{
+  color: rebeccapurple;
+  text-decoration: none;
 }
 
 .docsContainer {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
+  /* background-color: #72ff72; */
 }
 
 .bloqueDocumentacion {
   margin-top: 8px;
+  height: 300px;
+  
 }
 
-.docItem {
+.bloqueDocumentacion article {
   background-color: #d3d3d3;
   padding: 8px;
   border-radius: 8px;
   border: 1px solid #d1d1d1;
 }
 
-.docItemTitle,
-.docItemDescription,
-.codeExampleContainer {
+.bloqueDocumentacion p , h3 {
   margin: 8px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.codeExample {
+
+
+.bloqueDocumentacion div{
+  background-color: rgb(241, 245, 252);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid greenyellow;
+}
+
+.bloqueDocumentacion code{
   background-color: #000;
   height: 25px;
   color: #72ff72;
-  padding: 8px;
+  padding: 18px;
   border-radius: 8px;
   margin: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
